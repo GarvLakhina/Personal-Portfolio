@@ -3,12 +3,22 @@ import { Award, Trophy, Star, Zap } from "lucide-react";
 const CertificationsSection = () => {
   const certifications = [
     {
-      title: "UI/UX Workshop",
+      title: "UI/UX for Beginners",
       issuer: "Figma",
       type: "Design",
       icon: Award,
       color: "neon-pink",
-      year: "2024"
+      year: "2024",
+      link: "https://drive.google.com/file/d/1eFR08v-6-bjeECjq0u-femv7hYLzPx1g/view?usp=drive_link"
+    },
+    {
+      title: "Sigma at Figma Workshop",
+      issuer: "Figma",
+      type: "Design",
+      icon: Award,
+      color: "neon-pink",
+      year: "2024",
+      link: "https://drive.google.com/file/d/1t_WdjroC8Mm_NZp_kTFr0GKyA6veWt08/view?usp=drivesdk"
     },
     {
       title: "Android Development Workshop",
@@ -16,15 +26,17 @@ const CertificationsSection = () => {
       type: "Mobile",
       icon: Star,
       color: "neon-green",
-      year: "2024"
+      year: "2023",
+      link: "https://drive.google.com/file/d/1bdEPr0w8Ogd0BKiyV9l0isYjhGI2twyw/view?usp=drivesdk"
     },
     {
       title: "DSA with C++ Bootcamp",
-      issuer: "Coding Ninjas",
+      issuer: "Let'sUpgrade",
       type: "Programming",
       icon: Zap,
       color: "neon-blue",
-      year: "2023"
+      year: "2024",
+      link: "https://verify.letsupgrade.in/certificate/LUEDSACPPAUG12481"
     },
     {
       title: "Java Training",
@@ -32,7 +44,8 @@ const CertificationsSection = () => {
       type: "Programming",
       icon: Award,
       color: "neon-cyan",
-      year: "2023"
+      year: "2024",
+      link: "https://drive.google.com/file/d/1FhYqO4RQtLezq27UzicvXv_21JHtS6Xn/view?usp=drivesdk"
     },
     {
       title: "HTML Training",
@@ -40,24 +53,28 @@ const CertificationsSection = () => {
       type: "Web",
       icon: Star,
       color: "neon-purple",
-      year: "2023"
+      year: "2024",
+      link: "https://drive.google.com/file/d/1Fm1axkg6j5tkch_-BCI5bC0ZCkCyLiNq/view?usp=drivesdk"
+    },
+    {
+      title: "Aventus 3.0 Hackathon",
+      issuer: "Aventus",
+      type: "Cybersecurity, Hackathon",
+      icon: Trophy,
+      color: "neon-cyan",
+      year: "2025",
+      link: "https://drive.google.com/file/d/1FdlPfkc7ECPNmnfcdfEeIRRGOwy5iUDq/view?usp=drivesdk"
     },
     {
       title: "Ton Hacker House",
       issuer: "TON Foundation",
-      type: "Blockchain",
+      type: "Blockchain, Hackathon",
       icon: Trophy,
       color: "neon-green",
-      year: "2024"
+      year: "2024",
+      link: "https://drive.google.com/file/d/1FpFK-NNnqc5st2QMUXaGGUhl0R1HzfTV/view?usp=drivesdk"
     },
-    {
-      title: "DSA Certificate",
-      issuer: "Let'sUpgrade",
-      type: "Algorithms",
-      icon: Zap,
-      color: "neon-pink",
-      year: "2023"
-    }
+
   ];
 
   return (
@@ -137,9 +154,14 @@ const CertificationsSection = () => {
                           Verified
                         </span>
                       </div>
-                      <div className={`text-[10px] sm:text-xs font-mono text-${cert.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                      <a
+                        href={cert.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`text-[10px] sm:text-xs font-mono text-${cert.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 underline`}
+                      >
                         View →
-                      </div>
+                      </a>
                     </div>
                   </div>
 
