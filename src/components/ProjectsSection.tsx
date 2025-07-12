@@ -10,7 +10,8 @@ const ProjectsSection = () => {
       tech: ["Python", "OpenCV", "TensorFlow", "Firebase"],
       icon: Shield,
       color: "neon-pink",
-      glowColor: "shadow-neon-pink/50"
+      glowColor: "shadow-neon-pink/50",
+      github: "https://github.com/GarvLakhina/SecureWave.git"
     },
     {
       title: "Complain Hub",
@@ -19,7 +20,8 @@ const ProjectsSection = () => {
       tech: ["ReactJS", "Firebase", "Spring Boot"],
       icon: Globe,
       color: "neon-blue",
-      glowColor: "shadow-neon-blue/50"
+      glowColor: "shadow-neon-blue/50",
+      github: "https://github.com/GarvLakhina/ComplainHub.git"
     },
     {
       title: "Web3 Will Execution",
@@ -28,7 +30,8 @@ const ProjectsSection = () => {
       tech: ["Solidity", "Web3.js", "ReactJS", "IPFS"],
       icon: Zap,
       color: "neon-green",
-      glowColor: "shadow-neon-green/50"
+      glowColor: "shadow-neon-green/50",
+      github: "https://github.com/GarvLakhina/Decentralised-Will-Execution-System.git"
     },
     {
       title: "Sentinel AI",
@@ -37,7 +40,8 @@ const ProjectsSection = () => {
       tech: ["React", "Python", "Firebase", "Canvas API"],
       icon: Brain,
       color: "neon-cyan",
-      glowColor: "shadow-neon-cyan/50"
+      glowColor: "shadow-neon-cyan/50",
+      github: "https://github.com/GarvLakhina/Sentinel-AI.git"
     }
   ];
 
@@ -103,9 +107,11 @@ const ProjectsSection = () => {
                     </div>
                   </div>
                   <div className="flex space-x-1 sm:space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Button variant="ghost" size="icon" className="hover:bg-neon-blue/10">
-                      <Github className="w-5 h-5 text-neon-blue" />
-                    </Button>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Button variant="ghost" size="icon" className="hover:bg-neon-blue/10">
+                        <Github className="w-5 h-5 text-neon-blue" />
+                      </Button>
+                    </a>
                     <Button variant="ghost" size="icon" className="hover:bg-neon-green/10">
                       <ExternalLink className="w-5 h-5 text-neon-green" />
                     </Button>
