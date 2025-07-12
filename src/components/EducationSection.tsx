@@ -29,8 +29,8 @@ const EducationSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Timeline Container */}
           <div className="relative">
-            {/* Central Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 md:w-1 bg-gradient-neon h-full" />
+            {/* Central Timeline Line - Hidden on mobile */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 md:w-1 bg-gradient-neon h-full hidden md:block" />
 
             {/* Education Card */}
             <div className="relative flex flex-col md:flex-row items-start md:items-center mb-16">
@@ -122,7 +122,7 @@ const EducationSection = () => {
 
             {/* Additional Achievement Node */}
             <div className="relative flex items-center justify-start mt-16 md:mt-0">
-              <div className="absolute left-1/2 -top-3 transform -translate-x-1/2 w-6 h-6 bg-neon-pink rounded-full border-2 border-dark-void z-10" />
+              <div className="absolute left-1/2 md:top-1/2 -top-3 transform -translate-x-1/2 md:-translate-y-1/2 w-6 h-6 bg-neon-pink rounded-full border-2 border-dark-void z-10" />
               
               <div className="w-full lg:w-5/12 bg-dark-surface/60 border border-neon-pink/30 rounded-xl p-6 hover:border-neon-pink transition-all duration-500">
                 <div className="text-center">
