@@ -114,7 +114,7 @@ const HeroSection = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-8">
+        <div className="flex justify-center gap-4 sm:gap-8">
           <a 
             href="https://linkedin.com/in/garv-lakhina" 
             target="_blank" 
@@ -141,6 +141,16 @@ const HeroSection = () => {
           >
             <div className="p-4 rounded-full border-2 border-neon-pink/30 hover:border-neon-pink hover:bg-neon-pink/10 transition-all duration-300 group-hover:scale-110">
               <Mail className="w-6 h-6 text-neon-pink" />
+            </div>
+          </a>
+          <a 
+            href="/garv_resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group"
+          >
+            <div className="p-4 rounded-full border-2 border-neon-cyan/30 hover:border-neon-cyan hover:bg-neon-cyan/10 transition-all duration-300 group-hover:scale-110">
+              <span className="font-mono text-neon-cyan text-sm font-bold">Resume</span>
             </div>
           </a>
         </div>
